@@ -1,0 +1,5 @@
+.idea/
+.phpunit.result.cache
+/app/vendor
+/app/reports
+node_modules

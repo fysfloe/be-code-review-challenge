@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "9805864d-3bfc-4e33-9e51-67d78ef60e3a",
+		"name": "onlyfy Tech Challenge for Backend Developers",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17884536"
+	},
+	"item": [
+		{
+			"name": "Submit Review",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"My review My review My review\",\n    \"user\": \"somebody23@internet.com\",\n    \"pro\": \"Nice company to work for\",\n    \"contra\": \"Low salary\",\n    \"suggestions\": \"Increase salaries\",\n    \"rating\": {\n        \"culture\": 3,\n        \"management\": 4,\n        \"work_life_balance\": 5,\n        \"career_development\": 500\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/company/1/review",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"company",
+						"1",
+						"review"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Top 10 Recommend Companies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/top-recommended/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"top-recommended",
+						"10"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
